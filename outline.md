@@ -1,15 +1,111 @@
 
 - develop a plan and rough roadmap (at least for Q3) for this, and who is responsible for what
-- here’s a few things I’d like to see:
-  - define different stages of a project (e.g., experiment, dev, QA, release)
-  - define what are the requirements for each stage (e.g., maybe experiments don’t need a review process, but dev forward does)
-  - identify what would be the highest impact things to codify in a “best practices/guidelines” doc, e.g.,
-    - how to do a review and what the review process is
-    - branching models
-    - what shared infrastructure to use (libraries, services, etc)
-    - tests and recommended testing frameworks for node, front end testing framework
-    - how to write effective tests (maybe just links to articles here)
-    - where code gets checked in (e.g., github vs bugzilla)
-    - where issues are filed
-    - automaton (build, tests, linters, etc)
+  - July
+    - Develop detailed outline of deliverable
+    - Gather external sources
+    - Assign responsibilities
+    - Break work up into smaller deliverables
+  - August
+    - Shane out for most of August
+  - September
+
+- define different stages of a project (e.g., experiment, dev, QA, release) and
+  the requirements for each stage (e.g., maybe experiments don’t need a review process, but dev forward does)
+  - experiment/proof of concept
+  - target production
+    - gather requirements/designs
+    - development
+    - QA
+    - release
+    - iteration through the first 3
+- identify what would be the highest impact things to codify in a “best practices/guidelines” doc, e.g.,
+  - get to know your teammates, what their strengths are, what they like to do,
+    and what they'd rather avoid.
+    - talk about how you want to work together before tensions arise. (design
+      an aliance in TRIBE terms)
+  - where issues are filed
+    - GitHub
+      - which projects?
+    - Bugzilla
+      - which projects?
+  - bug scrub/prioritization
+    - who takes part?
+    - cadence of scrubs
+    - assigning priority
+  - meetings/standups?
+    - cadence
+    - who takes part?
+  - branching models
+    - GitFlow/Modified GitFlow
+    - branching vs forking
+  - where code gets checked in (e.g., github vs bugzilla)
+    - GitHub
+    - Bugzilla
+    - commit messages
+      - [Angular conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)
+  - how to do a review and what the review process is
+    - Shane wrote a big email about this.
+    - https://github.com/mozilla/persona/wiki/Reviewing-Pull-Requests
+    - r+ with technical debt/nits - file follow on issues!
+  - tests and recommended testing frameworks for node, front end testing framework
+    - front end
+      - mocha/QUnit/Jasmine
+    - back end
+      - mocha/The Intern
+    - functional
+      - The Intern
+      - Selenium/WD
+    - CI
+      - Travis
+      - Sauce
+      - Jenkins
+    - Code Coverage
+      - front end
+        - blanket
+      - back end
+        - ass
+      - Others
+  - how to write effective tests (maybe just links to articles here)
+  - what shared infrastructure to use (libraries, services, etc)
+    - The intern
+  - automaton (build, tests, linters, etc)
+      - grunt
+      - gulp?
+      - jshint
+      - jscs
+      - The Intern
+      - git precommit/prepush hooks
+  - style guides
+    - not universal, but should be internally consistent
+    - General
+      - [Mozilla](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style)
+    - Javascript
+      - [Mozilla](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style#JavaScript_practices)
+      - [Mozilla's SpiderMonkey](https://wiki.mozilla.org/JavaScript:SpiderMonkey:Coding_Style)
+      - [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+      - [AirBnB](https://github.com/airbnb/javascript)
+      - [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
+      - [Dojo](http://dojotoolkit.org/community/styleGuide)
+    - Python
+      - [Mozilla](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style#Python_Practices)
+  - documentation
+    - Design docs
+    - Setting up for development
+    - API docs
+    - Getting involved
+  - security/secure coding guidelines
+    - [Mozilla Secure Coding Guidelines](https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines)
+    - [Speeding up security review](https://blog.mozilla.org/security/2012/05/08/speeding-up-security-reviews/)
+    - [OWASP](https://www.owasp.org/index.php/OWASP_Top_10)
+    - [Microsoft SDL](http://www.microsoft.com/security/sdl/default.aspx)
+  - client side performance
+    - perhaps out of scope, but lots of interesting material
+
+- Some other external links
+  - [Persona's docs](https://github.com/mozilla/persona/wiki)
+  - [MSDN's Writing Quality Code](http://msdn.microsoft.com/en-us/library/4dtdybt8%28v=vs.90%29.aspx)
+  - [MSDN's Guidelines for Checking in Quality Code](http://msdn.microsoft.com/en-us/library/ms182021%28v=vs.90%29.aspx)
+  - Google
+    - [Google Research](http://research.google.com/pubs/SoftwareEngineering.html)
+    - [Google Testing Blog](http://googletesting.blogspot.co.uk/)
 
